@@ -19,12 +19,12 @@ Clone the Repository
 cd /path/to/your/directory
 
 
-	2.	Clone the repository:
+2.	Clone the repository:
 
 git clone https://github.com/AkashTemburnikar/ServiceBusEmulator.git
 
 
-	3.	Navigate to the project directory:
+3.	Navigate to the project directory:
 
 cd ServiceBusEmulator/ServiceBusEmulatorTest
 
@@ -41,15 +41,15 @@ Run the Project with Docker
 cd /path/to/ServiceBusEmulator/ServiceBusEmulatorTest
 
 
-	3.	Start the services:
+3.	Start the services:
 
 docker-compose up
 
 
-	4.	Verify the services:
+4.	Verify the services:
 	•	Open Docker Desktop to confirm the containers are running.
 	•	Check the terminal logs for any errors.
-	5.	Stop the services when done:
+Stop the services when done:
 
 docker-compose down
 
@@ -59,7 +59,7 @@ Testing the Console Application
 dotnet run
 
 
-	2.	Choose an option:
+2.	Choose an option:
 	•	Option 1: Send a message to the Service Bus queue.
 	•	Enter the message content when prompted.
 	•	The application will confirm the message was sent successfully.
