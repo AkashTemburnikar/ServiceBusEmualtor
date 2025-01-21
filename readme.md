@@ -32,7 +32,8 @@ git clone https://github.com/AkashTemburnikar/ServiceBusEmulator.git.
 
 3. Navigate to the project directory:
 
-cd ServiceBusEmulator/ServiceBusEmulatorTest
+   ```bash
+   cd ServiceBusEmulator/ServiceBusEmulatorTest
 
 Install and Verify Docker
 1.	Download and install Docker Desktop from here.
@@ -47,21 +48,25 @@ Run the Project with Docker
 1.	Ensure Docker Desktop is running.
 2.	Navigate to the project directory containing the docker-compose.yaml file:
 
-cd /path/to/ServiceBusEmulator/ServiceBusEmulatorTest
+    ```bash
+   cd /path/to/ServiceBusEmulator/ServiceBusEmulatorTest
 
 
 3. Start the services:
 
-docker-compose up
+   ```bash
+      docker-compose up
 
 This will pull the required Docker images, build the project, and start the containers.
 
 4. Verify the services:
 	•	Open Docker Desktop to confirm the containers are running.
 	•	Check the terminal logs for any errors.
+
 5. Stop the services when done:
 
-docker-compose down
+   ```bash
+      docker-compose down
 
 Testing the Console Application
 1.	Run the Application:
@@ -70,13 +75,13 @@ Execute the application in your terminal:
 dotnet run
 
 
-	2.	Choose an Option:
+2.	Choose an Option:
 	•	Option 1: Send a message to the Service Bus queue.
-	•	Enter the message content when prompted.
-	•	The application will confirm the message was sent successfully.
+	   •	Enter the message content when prompted.
+	   •	The application will confirm the message was sent successfully.
 	•	Option 2: Receive messages from the Service Bus queue.
-	•	The application will fetch up to 10 messages and display their content.
-	•	Messages will be removed from the queue after being processed.
+	   •	The application will fetch up to 10 messages and display their content.
+	   •	Messages will be removed from the queue after being processed.
 
 Official Documentation
 
