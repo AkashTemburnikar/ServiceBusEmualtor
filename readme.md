@@ -38,7 +38,8 @@ Install and Verify Docker
 1.	Download and install Docker Desktop from here.
 2.	Start Docker Desktop and verify the installation:
 
-docker --version
+```bash
+      docker --version.
 
 If installed correctly, it will display the Docker version.
 
