@@ -1,31 +1,23 @@
-Here is the end-to-end markup content with proper Azure DevOps Wiki-style formatting:
+ServiceBusEmulator
 
-# ServiceBusEmulator
+This repository contains a project for setting up and testing a Service Bus Emulator using Docker. The project is built as a .NET 9 console application with two functionalities:
+1.	Send Message: Sends a message to the Service Bus queue.
+2.	Receive Messages: Retrieves and processes messages from the Service Bus queue.
 
-This repository contains a project for setting up and testing a **Service Bus Emulator** using Docker. The project is built as a **.NET 9 console application** with two functionalities:
-
-1. **Send Message**: Sends a message to the Service Bus queue.
-2. **Receive Messages**: Retrieves and processes messages from the Service Bus queue.
-
----
-
-## Prerequisites
+Prerequisites
 
 Ensure the following tools are installed:
+•	Git: Download Git
+•	Docker Desktop: Download Docker Desktop
+•	.NET 9 SDK: Download .NET 9 SDK
 
-- **Git**: [Download Git](https://git-scm.com/downloads)
-- **Docker Desktop**: [Download Docker Desktop](https://www.docker.com/products/docker-desktop)
-- **.NET 9 SDK**: [Download .NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
+Getting Started
 
----
+Clone the Repository
+1.	Open your terminal and navigate to your desired directory:
 
-## Getting Started
+cd /path/to/your/directory
 
-### Clone the Repository
-
-1. Open your terminal and navigate to your desired directory:
-   ```bash
-   cd /path/to/your/directory
 
 	2.	Clone the repository:
 
@@ -42,8 +34,6 @@ Install and Verify Docker
 
 docker --version
 
-If installed correctly, it will display the Docker version.
-
 Run the Project with Docker
 1.	Ensure Docker Desktop is running.
 2.	Navigate to the project directory containing the docker-compose.yaml file:
@@ -55,7 +45,6 @@ cd /path/to/ServiceBusEmulator/ServiceBusEmulatorTest
 
 docker-compose up
 
-This will pull the required Docker images, build the project, and start the containers.
 
 	4.	Verify the services:
 	•	Open Docker Desktop to confirm the containers are running.
@@ -65,13 +54,12 @@ This will pull the required Docker images, build the project, and start the cont
 docker-compose down
 
 Testing the Console Application
-1.	Run the Application:
-Execute the application in your terminal:
+1.	Run the application:
 
 dotnet run
 
 
-	2.	Choose an Option:
+	2.	Choose an option:
 	•	Option 1: Send a message to the Service Bus queue.
 	•	Enter the message content when prompted.
 	•	The application will confirm the message was sent successfully.
@@ -80,17 +68,6 @@ dotnet run
 	•	Messages will be removed from the queue after being processed.
 
 Official Documentation
-
-For more details, refer to the following official resources:
-•	Overview of Service Bus Emulator
-•	Testing Locally with Service Bus Emulator
-
-This format ensures compatibility with Azure DevOps Wiki and maintains proper indentation, bullet points, and syntax highlighting where needed. Let me know if further adjustments are required!
-
-Official Documentation
-
-For more details, refer to the following official resources:
-
 •	Overview of Service Bus Emulator:
 https://learn.microsoft.com/en-us/azure/service-bus-messaging/overview-emulator
 •	Testing Locally with Service Bus Emulator:
