@@ -1,16 +1,19 @@
-Here’s a documentation draft tailored for a GitHub README:
+Documentation to Run ServiceBusEmulator
 
-ServiceBusEmulator
-
-This repository contains a project for setting up and testing a Service Bus Emulator using Docker.
+This repository contains a project for setting up and testing a Service Bus Emulator using Docker. The project is built as a .NET 9 console application with two endpoints:
+1.	Send Message Endpoint: Sends a message to the Service Bus queue.
+2.	Receive Message Endpoint: Retrieves and processes messages from the Service Bus queue.
 
 Prerequisites
-•	Git
-•	Docker Desktop
+
+Before you start, ensure you have the following installed:
+•	Git: For cloning the repository.
+•	Docker Desktop: For running the emulator as a Docker container.
+•	.NET 9 SDK: To run the console application.
 
 Getting Started
 
-Follow the steps below to clone this repository, install Docker Desktop, and run the project.
+Follow these steps to clone the repository, install Docker Desktop, and run the project.
 
 Clone the Repository
 1.	Open your terminal or command prompt.
@@ -54,7 +57,7 @@ The project includes a compose.yaml file to set up the required services.
 cd /path/to/ServiceBusEmualtor/ServiceBusEmualtorTest
 
 
-	3.	Run the following command to start the services:
+	3.	Start the services by running the following command:
 
 docker-compose up
 
@@ -73,3 +76,25 @@ To stop the running containers, use the following command:
 docker-compose down
 
 This command will stop and remove the containers but retain the Docker images for future use.
+
+Testing the .NET 9 Console Application
+1.	Send Message to Service Bus:
+•	Use the console application to send a message to the Service Bus queue.
+•	Follow the prompts provided by the application or edit the code to specify the message details.
+2.	Receive Message from Service Bus:
+•	Run the console application’s receive message endpoint to retrieve messages from the queue.
+•	The messages will be displayed in the console.
+
+Official Documentation
+
+For more details on the Service Bus Emulator, refer to the official documentation:
+•	Overview of Service Bus Emulator:
+Azure Service Bus Emulator Documentation
+•	How to Test Locally with Service Bus Emulator:
+Testing Locally with Service Bus Emulator
+
+Notes
+•	This project is a .NET 9 console application with two key endpoints:
+•	Send Message: Sends messages to the Service Bus queue.
+•	Receive Message: Receives and processes messages from the Service Bus queue.
+•	Ensure that the Service Bus Emulator is running before testing the application.
