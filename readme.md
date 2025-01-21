@@ -32,8 +32,8 @@ git clone https://github.com/AkashTemburnikar/ServiceBusEmulator.git.
 
 3. Navigate to the project directory:
 
-   ```bash
-   cd ServiceBusEmulator/ServiceBusEmulatorTest
+       ```bash
+       cd ServiceBusEmulator/ServiceBusEmulatorTest
 
 Install and Verify Docker
 1.	Download and install Docker Desktop from here.
