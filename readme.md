@@ -25,12 +25,12 @@ Ensure the following tools are installed:
    ```bash
    cd /path/to/your/directory
 
-	2.	Clone the repository:
+2. Clone the repository:
 
-git clone https://github.com/AkashTemburnikar/ServiceBusEmulator.git
+git clone https://github.com/AkashTemburnikar/ServiceBusEmulator.git.
 
 
-	3.	Navigate to the project directory:
+3. Navigate to the project directory:
 
 cd ServiceBusEmulator/ServiceBusEmulatorTest
 
@@ -49,16 +49,16 @@ Run the Project with Docker
 cd /path/to/ServiceBusEmulator/ServiceBusEmulatorTest
 
 
-	3.	Start the services:
+3. Start the services:
 
 docker-compose up
 
 This will pull the required Docker images, build the project, and start the containers.
 
-	4.	Verify the services:
+4. Verify the services:
 	•	Open Docker Desktop to confirm the containers are running.
 	•	Check the terminal logs for any errors.
-	5.	Stop the services when done:
+5. Stop the services when done:
 
 docker-compose down
 
@@ -80,7 +80,7 @@ dotnet run
 Official Documentation
 
 For more details, refer to the following official resources:
-•	Here are the URLs only:
+
 •	Overview of Service Bus Emulator:
 https://learn.microsoft.com/en-us/azure/service-bus-messaging/overview-emulator
 •	Testing Locally with Service Bus Emulator:
