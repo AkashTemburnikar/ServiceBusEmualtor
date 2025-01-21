@@ -17,69 +17,82 @@ Make sure you have the following tools installed:
 
 ## **Getting Started**
 
-### **Clone the Repository**
-- Open your terminal and navigate to your desired directory:
-  ```bash
-  cd /path/to/your/directory
+### **1. Clone the Repository**
 
-	•	Clone the repository:
+1. Open your terminal and navigate to your desired directory:
+   ```bash
+   cd /path/to/your/directory
+   ```
 
-git clone https://github.com/AkashTemburnikar/ServiceBusEmulator.git
+2. Clone the repository:
+   ```bash
+   git clone https://github.com/AkashTemburnikar/ServiceBusEmulator.git
+   ```
 
+3. Navigate into the project folder:
+   ```bash
+   cd ServiceBusEmulator/ServiceBusEmulatorTest
+   ```
 
-	•	Navigate into the project folder:
+---
 
-cd ServiceBusEmulator/ServiceBusEmulatorTest
+### **2. Install and Verify Docker**
 
+1. Download and install Docker Desktop from the [official page](https://www.docker.com/products/docker-desktop).
 
+2. Start Docker Desktop and verify the installation by running:
+   ```bash
+   docker --version
+   ```
 
-Install and Verify Docker
-•	Download and install Docker Desktop from the official page.
-•	Start Docker Desktop and verify the installation:
+---
 
-docker --version
+### **3. Running the Project with Docker**
 
-Running the Project with Docker
-•	Ensure Docker Desktop is running.
-•	Navigate to the directory containing the docker-compose.yaml file:
+1. Ensure Docker Desktop is running.
 
-cd /path/to/ServiceBusEmulator/ServiceBusEmulatorTest
+2. Navigate to the directory containing the `docker-compose.yaml` file:
+   ```bash
+   cd /path/to/ServiceBusEmulator/ServiceBusEmulatorTest
+   ```
 
+3. Start the Docker services:
+   ```bash
+   docker-compose up
+   ```
 
-	•	Start the Docker services:
+4. Verify the services are running:
+   - Open Docker Desktop and confirm that the containers are running.
+   - Check the terminal logs for any errors.
 
-docker-compose up
+5. Stop the services when done:
+   ```bash
+   docker-compose down
+   ```
 
+---
 
-	•	Verify the services:
-	•	Open Docker Desktop and confirm that the containers are running.
-	•	Check the terminal logs for any errors.
-	•	Stop the services when done:
+### **4. Testing the Console Application**
 
-docker-compose down
+1. Run the application:
+   ```bash
+   dotnet run
+   ```
 
-Testing the Console Application
-•	Run the application:
+2. Choose one of the available options:
 
-dotnet run
+#### **Send Messages**
+- Enter the message content when prompted.
+- The application will confirm that the message was sent successfully.
 
+#### **Receive Messages**
+- The application will fetch up to 10 messages from the queue and display their content.
+- Messages will be removed from the queue after being processed.
 
-	•	Choose one of the available options:
-	•	Send Messages
+---
 
-Enter the message content when prompted.
-The application will confirm the message was sent successfully.
+## **Official Documentation**
 
-
-	•	Receive Messages
-
-The application will fetch up to 10 messages from the queue and display their content.
-Messages will be removed from the queue after being processed.
-
-
-
-Official Documentation
-•	Overview of Service Bus Emulator:
-https://learn.microsoft.com/en-us/azure/service-bus-messaging/overview-emulator
-•	Testing Locally with Service Bus Emulator:
-https://learn.microsoft.com/en-us/azure/service-bus-messaging/test-locally-with-service-bus-emulator?tabs=automated-script
+For further details, refer to the official Azure documentation:
+- [Overview of Service Bus Emulator](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-emulator)
+- [Testing Locally with Service Bus Emulator](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-emulator-testing)
