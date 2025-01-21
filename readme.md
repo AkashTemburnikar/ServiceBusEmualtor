@@ -1,5 +1,3 @@
-Here’s a simplified and complete markdown version for your GitHub README.md file:
-
 # ServiceBusEmulator
 
 This repository contains a project for setting up and testing a **Service Bus Emulator** using Docker. The project is built as a **.NET 9 console application** with two endpoints:
