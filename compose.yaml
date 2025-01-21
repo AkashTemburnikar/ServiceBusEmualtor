@@ -1,0 +1,37 @@
+﻿version: '3.8'
+
+services:
+  # Azure Service Bus Emulator Service
+  emulator:
+    container_name: "servicebus-emulator"
+    image: "mcr.microsoft.com/azure-messaging/servicebus-emulator:latest"
+    volumes:
+      - "./Config.json:/config/Config.json" # Bind mount for configuration
+    ports:
+      - "5672:5672"
+    environment:
+      SQL_SERVER: "sqledge" # SQL Server dependency
+      MSSQL_SA_PASSWORD: "Akash@1910" # Strong password for SQL Server
+      ACCEPT_EULA: "Y" # Accept Microsoft EULA
+    depends_on:
+      - sqledge # Wait for SQL Server container to be ready
+    networks:
+      sb-emulator:
+        aliases:
+          - "sb-emulator" # Network alias for the service
+
+  # SQL Edge Service for Azure Service Bus Emulator
+  sqledge:
+    container_name: "sqledge"
+    image: "mcr.microsoft.com/azure-sql-edge:latest"
+    environment:
+      ACCEPT_EULA: "Y" # Accept Microsoft EULA
+      MSSQL_SA_PASSWORD: "TestServiceBus@1910" # Strong password for SA user
+    networks:
+      sb-emulator:
+        aliases:
+          - "sqledge" # Network alias for the service
+
+networks:
+  sb-emulator:
+    driver: bridge

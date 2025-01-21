@@ -1,0 +1,31 @@
+# macOS system files
+.DS_Store
+
+# Rider IDE files
+.idea/
+
+# Build outputs
+bin/
+obj/
+
+# Logs
+*.log
+
+# User-specific files
+*.user
+*.suo
+
+# Visual Studio Code settings
+.vscode/
+
+# Other IDE files
+*.vs/
+
+# Temporary files
+*.tmp
+
+# User-specific files
+*.lock.json
+
+# Visual Studio files
+.vs/
