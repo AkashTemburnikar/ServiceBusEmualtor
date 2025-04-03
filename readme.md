@@ -65,7 +65,7 @@ Make sure you have the following tools installed:
    - Open Docker Desktop and confirm that the containers are running.
    - Check the terminal logs for any errors.
 
-5. Stop the services when done:
+5. If you want to Stop the services when testing is done:
    ```bash
    docker-compose down
    ```
